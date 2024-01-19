@@ -1,0 +1,17 @@
+# LaTeX generated files
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+*.gz
+
+# LaTeX project temporary files
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+

@@ -1,0 +1,85 @@
+\documentclass{beamer}
+\usepackage{ctex}
+\usepackage[style=numeric,backend=bibtex]{biblatex}
+\usepackage{tikz}         % 背景图
+\usepackage{graphicx}
+\usepackage{booktabs}     % 三线表
+% \usepackage{algorithm2e}  % 算法缩进
+% \addbibresource{Groupmeeting.bib}  % 引用文件
+
+
+% 参考文献字体
+% \setbeamerfont{bibliography entry author}{size=\scriptsize}
+% \setbeamerfont{bibliography entry title}{size=\scriptsize}
+% \setbeamerfont{bibliography entry journal}{size=\scriptsize}
+% \setbeamerfont{bibliography entry note}{size=\small}
+
+\usetheme{CambridgeUS}
+% \usecolortheme{custom}
+
+%Information to be included in the title page:
+\section{Hello}
+\subsection{一}
+
+\title[小标题]{这是一个大标题，我的模板}
+\author{bigash}
+\institute{所属机构}
+\date{\today}
+
+% 这是主页面背景图
+% \titlegraphic{
+%     % \hspace{-5cm} 
+%     \vspace{-7cm}
+%     % \includegraphics[width=6cm]{nwnu.jpg}
+% }
+
+
+\begin{document}
+
+\begin{frame}[plain]
+    % \thispagestyle{empty} % 设置当前页面的页眉为空
+  \titlepage
+\end{frame}
+
+
+\begin{frame}
+\frametitle{目录？}
+\end{frame}
+
+
+\section{第一部分}
+\subsection{小部分}
+\begin{frame}
+    \frametitle{标题}
+    \framesubtitle{小标题}
+    \begin{itemize}
+        \item 1.
+        \item 2.
+        \item 3.
+        \item \textcolor{blue}{4.}
+        \item 5.
+      \end{itemize}
+\end{frame}
+
+
+\section{第二部分}
+\subsection{小部分}
+\begin{frame}
+    模板中的sty文件是colortheme
+\end{frame}
+
+
+\section{第三部分}
+\subsection{小部分}
+\begin{frame}
+    洒洒水
+\end{frame}
+
+\section{第四部分-总结}
+
+\begin{frame}[allowframebreaks]
+  \frametitle{参考文献}
+  \printbibliography[heading=none]
+\end{frame}
+
+\end{document}
