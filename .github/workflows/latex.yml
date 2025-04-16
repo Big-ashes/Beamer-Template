@@ -18,7 +18,7 @@ jobs:
       - name: Install TeX Live
         uses: zauguin/install-texlive@v4
         with:
-          packages_file: .github/te_packages
+          package_file: .github/tl_packages
 
       - name: Compile LaTeX document (pdflatex)
         run: |
