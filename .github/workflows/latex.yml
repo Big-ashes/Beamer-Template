@@ -14,12 +14,9 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Set up TeX Live
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y texlive-xetex texlive-bibtex-extra texlive-fonts-recommended texlive-latex-extra
+        uses: actions/checkout@v4
+        with:
+          packages_file: .github/te_packages
 
       - name: Compile LaTeX document (pdflatex)
         run: |
@@ -32,4 +29,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: output-pdf
-          path: main.pdf  
+          path: CambridgeUS-c.pdf  
