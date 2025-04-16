@@ -7,6 +7,8 @@
 *.toc
 *.vrb
 *.gz
+*blx.bib
+*.run.xml
 
 # LaTeX project temporary files
 *.bbl
