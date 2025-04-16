@@ -15,15 +15,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Install TeX Live
-        uses: zauguin/install-texlive@v4
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
         with:
-          package_file: .github/tl_packages
-
-      - name: Compile LaTeX document (pdflatex)
-        run: |
-          pdflatex CambridgeUS-c.tex  
-          bibtex CambridgeUS-c-blx      
-          pdflatex CambridgeUS-c.tex  
-          pdflatex CambridgeUS-c.tex  
+          root_file: main.tex
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v4
+        with:
+          name: PDF
+          path: main.pdf
 
